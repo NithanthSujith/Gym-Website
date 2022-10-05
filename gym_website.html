@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRAVITY FITNESS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img.jpg');
+            height: 4300px;
+            background-repeat: no-repeat;
+        }
+
+        .left {
+            position: absolute;
+            left: 10px;
+            top: 30px;
+            display: inline-block;
+            /* border: 2px solid red; */
+
+        }
+
+        .left img {
+            width: 135px;
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            /* border: 2px solid yellow; */
+            width: 40%;
+            margin: 30px auto;
+            text-decoration: none;
+            background-color: #342875;
+            border-radius: 5px;
+
+
+        }
+
+        .right {
+            position: absolute;
+            right: 10px;
+            top: 30px;
+            display: inline-block;
+            /* border: 2px solid green; */
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: #00ffe0f0;
+            text-decoration: none;
+            padding: 25px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: #73faeaf0;
+
+        }
+
+        .btn {
+            margin: 5px;
+            padding: 6px;
+            background-color: #c1aaef;
+            border: 2px solid #c57df3;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #c067f7;
+        }
+
+        .container {
+            /* border: 3px solid red; */
+            color: snow;
+            border-radius: 5px;
+            margin: 100px 40px;
+            padding: 50px;
+            width: 38%;
+        }
+
+        .formgroup input {
+            margin: 13px auto;
+            display: block;
+            width: 558px;
+            padding: 9px;
+            font-size: 16.5px;
+            border-radius: 5px;
+
+        }
+        .container h2{
+            text-align: center;
+            color: slateblue;
+        }
+        .container button{
+            display: block;
+            width: 240px;
+            margin: auto;
+            
+        }
+        .container label{
+            font-size: 20px;
+            color: rgb(94, 235, 235);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+        <!-- left is for logo -->
+        <div class="left">
+            <img src="gym logo.png" alt="">
+            <div>
+                GRAVITY FITNESS
+            </div>
+        </div>
+
+        <!-- mid is for navigation menu -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">HOME</a> </li>
+                <li><a href="#">GALLERY</a> </li>
+                <li><a href="#">PROGRAMS</a> </li>
+                <li><a href="#">CONTACT US</a> </li>
+            </ul>
+        </div>
+
+        <!-- right is for buttons -->
+        <div class="right">
+            <button class="btn">JOIN US</button>
+            <button class="btn">LOGIN</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>BE FIT WITH GRAVITY FITNESS!!</h2>
+        <form action="noaction.php">
+            <!-- name in the form  -->
+            <div class="formgroup">
+                <label for="name">Name:</label>
+                <input type="text" name="myname" placeholder="Enter your name">
+            </div>
+            <!-- age in the form  -->
+            <div class="formgroup">
+                <label for="age">Age:</label>
+                <input type="text" name="myage" placeholder="Enter your age">
+            </div>
+            <!-- profession in the form  -->
+            <div class="formgroup">
+                <label for="profession">Profession:</label>
+                <input type="text" name="myprofession" placeholder="Enter your profession">
+            </div>
+            <!-- address in the form  -->
+            <div class="formgroup">
+            ADDRESS:<input type="text" name="myaddress" placeholder="Enter your address">
+            </div>
+            <!-- submit button  -->
+            <button class="btn">
+                SUBMIT
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
